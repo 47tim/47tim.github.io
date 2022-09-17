@@ -1,0 +1,7 @@
+{
+  "short_name": "Project Condor",
+  "name": "Project Condor Landing",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone"
+}
