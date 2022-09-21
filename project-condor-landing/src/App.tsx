@@ -1,7 +1,7 @@
 import { IonApp, IonRouterOutlet, setupIonicReact } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from "react-router-dom";
-
+import "./index.css";
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -17,6 +17,8 @@ import "@ionic/react/css/float-elements.css";
 import "@ionic/react/css/padding.css";
 import "@ionic/react/css/text-alignment.css";
 import "@ionic/react/css/text-transformation.css";
+import { FC } from "react";
+import { Navbar } from "./components/Navbar";
 
 setupIonicReact();
 
@@ -26,7 +28,7 @@ const App: React.FC = () => {
       <IonReactRouter>
         <IonRouterOutlet id="main">
           <Route path="/" exact={true}>
-            sks
+            <LandingPage />
           </Route>
           <Redirect to="/" />
         </IonRouterOutlet>
@@ -35,4 +37,11 @@ const App: React.FC = () => {
   );
 };
 
+const LandingPage: FC = () => {
+  return (
+    <>
+      <Navbar title="Project Condor">hi</Navbar>
+    </>
+  );
+};
 export default App;
