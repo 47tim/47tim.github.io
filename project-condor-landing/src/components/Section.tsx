@@ -1,8 +1,13 @@
 import React from "react";
 
-interface SectionProps {
-  children?: React.ReactNode;
-}
-export function Section({ children }: SectionProps) {
-  return <div className="py-20 px-20">{children}</div>;
+export function Section({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <section className={`flex py-10 px-10 ${className}`}>{children}</section>
+  );
 }

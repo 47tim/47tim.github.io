@@ -19,6 +19,8 @@ import "@ionic/react/css/text-alignment.css";
 import "@ionic/react/css/text-transformation.css";
 import { FC } from "react";
 import { Navbar } from "./components/Navbar";
+import { FallSemesterSection } from "./components/Sections/FallSemesterSection";
+import { HeroSection } from "./components/Sections/HeroSection";
 
 setupIonicReact();
 
@@ -40,7 +42,19 @@ const App: React.FC = () => {
 const LandingPage: FC = () => {
   return (
     <>
-      <Navbar title="Project Condor">hi</Navbar>
+      <Navbar
+        title="Project Condor"
+        navbarLinks={[
+          {
+            text: "Contact",
+            href: "mailto:condorcontact@gmail.com",
+          },
+        ]}
+      />
+      <article>
+        <HeroSection />
+        <FallSemesterSection />
+      </article>
     </>
   );
 };
