@@ -18,7 +18,9 @@ export function Navbar({
         src={titleImg}
         alt="Project Condor Logo"
       />
-      <span className="hidden">{title}</span>
+      <span className="hidden md:flex whitespace-nowrap text-3xl font-bold ml-6">
+        {title}
+      </span>
       <div className="flex flex-row w-full justify-end">
         {navbarLinks &&
           navbarLinks.map((linkInfo) => {
