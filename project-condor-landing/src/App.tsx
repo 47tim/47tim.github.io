@@ -1,4 +1,9 @@
-import { IonApp, IonRouterOutlet, setupIonicReact } from "@ionic/react";
+import {
+  IonApp,
+  IonContent,
+  IonRouterOutlet,
+  setupIonicReact,
+} from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from "react-router-dom";
 import "./index.css";
@@ -30,7 +35,9 @@ const App: React.FC = () => {
       <IonReactRouter>
         <IonRouterOutlet id="main">
           <Route path="/" exact={true}>
-            <LandingPage />
+            <IonContent>
+              <LandingPage />
+            </IonContent>
           </Route>
           <Redirect to="/" />
         </IonRouterOutlet>
@@ -51,10 +58,13 @@ const LandingPage: FC = () => {
           },
         ]}
       />
-      <article>
-        <HeroSection />
-        <FallSemesterSection />
-      </article>
+      <HeroSection />
+      <FallSemesterSection />
+      <FallSemesterSection />
+      <FallSemesterSection />
+      <FallSemesterSection />
+      <FallSemesterSection />
+      <FallSemesterSection />
     </>
   );
 };
