@@ -26,6 +26,8 @@ import { FC } from "react";
 import { Navbar } from "./components/Navbar";
 import { FallSemesterSection } from "./components/Sections/FallSemesterSection";
 import { HeroSection } from "./components/Sections/HeroSection";
+import { PlanSection } from "./components/Sections/PlanSection";
+import { Footer } from "./components/Footer";
 
 setupIonicReact();
 
@@ -60,11 +62,8 @@ const LandingPage: FC = () => {
       />
       <HeroSection />
       <FallSemesterSection />
-      <FallSemesterSection />
-      <FallSemesterSection />
-      <FallSemesterSection />
-      <FallSemesterSection />
-      <FallSemesterSection />
+      <PlanSection />
+      <Footer />
     </>
   );
 };
