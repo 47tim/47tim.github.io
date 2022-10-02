@@ -1,7 +1,0 @@
-{
-  "name": "Project Condor Landing",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
